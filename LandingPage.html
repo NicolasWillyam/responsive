@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--=============== FAVICONS ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        
+       
+
+        <title>Planet Kill</title>
+    </head>
+    <body>
+        <canvas id="snow"></canvas>
+        <img src="./assets/images/background.jpg" class="landing__img">
+        <div class="landing-page">
+            
+            <div class="bar__container h-auto absolute top-20 bottom-20 right-20 left-20 text-white flex justify-center items-center">
+                <div class="loading__bar mr-auto ml-auto">
+                    <center>
+                        <i class="fas fa-place-of-worship fa-lg m-5 reveal_left"></i>
+                    </center>
+                    <div class="bar reveal_right">
+                        <div class="fill flex items-center">
+                        </div>
+                    </div>
+                    <center>
+                        <div class="counter font-semibold mt-3">LOADING . . . 0%</div>
+           
+                    <button class="landing__button mt-3 reveal_right">READY</button>
+                    </center>
+                </div>
+            </div>
+
+            <div class="output h-auto absolute top-20 bottom-20 right-20 left-20 text-white justify-center items-center">
+                <div class="loading__bar mr-auto ml-auto">
+                    <center>
+                        <i class="fas fa-place-of-worship fa-lg m-5 reveal_left"></i>
+                    </center>
+                    <div class="bar reveal_right">
+                        <div class="fill-all flex items-center">
+                        </div>
+                    </div>
+                    <center>
+                        <div class="counter font-semibold mt-3">LOADING . . . 100%</div>
+                        
+                    <a href="./Home.html">
+                        <button class="landing__button mt-3 reveal_right">LET'S GO</button>
+                    </a>    
+                    </center>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            let container = document.querySelector(".bar__container");
+            let output = document.querySelector(".output");
+            let fill = document.querySelector(".fill");
+            let click = document.querySelector("button");
+            click.addEventListener('click', () => {
+                var a = 0;
+                var run = setInterval(frames, 50);
+        
+                function frames() {
+                a = a + 2;
+                if (a == 102) {
+                    clearInterval(run);
+                    setTimeout(() => { 
+                        container.style.display = "none";
+                        output.style.display = "flex"; }, 500)
+                } else {
+                    var counter = document.querySelector(".counter");
+                    counter.textContent = "LOADING . . . " +  a + "%";
+                    fill.style.width = a + "%";
+                }
+                }
+            })
+            </script>
+            
+    </body>
+    <script src="./assets/js/snow.js"></script>
+</html>

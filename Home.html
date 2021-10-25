@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--=============== FAVICONS ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+        <title>Planet Kill</title>
+    </head>
+    <body class="overflow-hidden body">
+        <video id="video_background" preload="auto" autoplay="true" loop="loop" muted volume="0">
+            <source type="video/mp4" src="./assets/video/video.mp4">
+        </video>
+        <div class="landing-page">
+            <div class="landing__container">
+
+                <center>
+                    <div class="landing__logo reveal_top">
+                        <h5>LOGO</h5>
+                    </div>
+                </center>
+
+                <div class="landing__categories absolute top-0 left-0 reveal_right">
+                    <div class="landing__data flex landing__icons mt-1">
+                        <i class="fas fa-newspaper landing__icons fa-lg"></i>
+                        <h1 class="landing__line">|</h1>
+                        <h5>NEWS</h5>
+                    </div> 
+                </div>
+
+                <div class="music_cart flex ">
+                    <div class="cart h-12 w-14 absolute flex top-0 right-0 reveal_right">
+                        <i class="fas fa-shopping-bag fa-lg landing__icons mt-1"></i>
+                        <div class="cart__items h-4 w-4 absolute top-2 right-3 rounded-full">
+                            <h5 class="text-xs text-white font-bold">1</h5>
+                        </div>
+                    </div>
+                    <div class="landing__music_cart absolute top-0 right-14 reveal_right">
+                        <div class="landing__data flex mt-1">
+                            <h5>SHOP</h5>
+                            <i class="fas fa-store landing__icons ml-3"></i>
+                            <h1 class="landing__line">|</h1> 
+                        </div>               
+                    </div>
+                     
+                </div>
+
+                <div class="landing__categories absolute bottom-0 left-0 reveal_left">
+                    <div class="landing__data flex landing__icons mt-1">
+                        <i class="fas fa-film fa-lg"></i>
+                        <h1 class="landing__line">|</h1>
+                        <h5>VIDEO</h5>
+                    </div> 
+                </div>
+
+                <div class="landing__categories absolute bottom-0 right-0 reveal_right">
+                    <div class="landing__data flex landing__icons mt-1">
+                        <h5>MUSIC</h5>
+                        <h1 class="landing__line">|</h1>
+                        <i class="fas fa-headphones-alt fa-lg landing__icons"></i>
+                    </div> 
+                </div>
+                
+            </div>
+
+            <div class="absolute top-20 bottom-20 right-20 left-20 flex justify-center items-center">
+                <div class="home__content reveal_top ml-3">
+                    <h5>PLANETKILL</h5>
+                </div>
+            </div>
+        </div>
+
+        <!--=============== SCROLL REVEAL===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>

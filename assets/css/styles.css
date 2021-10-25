@@ -1,0 +1,228 @@
+/*=============== GOOGLE FONTS ===============*/
+
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+
+    /*========== Colors ==========*/
+    --color-white: #F2E9E9;
+    --color-black: #0D0D0D;
+    --color-gray: #404040;
+    --color-light-red: #D94848;
+    --color-dark-red: #BF2E21;
+    --color-light-green: #317560;
+    --color-dark-green: #046464;
+}
+
+@font-face {
+    font-family: "OCR-A";
+    src: url(/assets/fonts/OCR-ABT.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: OCR-A;
+    
+}
+.body {
+    background-color: var(--color-black);
+    font-family: OCR-A;
+}
+
+#video_background {
+    position: absolute;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    object-position: 80%;
+      
+}
+
+.landing__container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.landing__img {
+ 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 80%;
+    animation-name: example;
+    animation-delay: 0s;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+
+.landing__logo, .landing__music_cart,
+.landing__categories {
+    cursor: pointer;
+    color: var(--color-white);
+    align-items: center;
+}
+
+/*===== Snow Effect =====*/
+
+@keyframes blink{
+    0%{
+        border-right-color:transparent;
+    }
+    50%{
+        border-right-color:transparent;
+    }
+    51%{
+        border-right-color:#fff;
+    }
+    100%{
+        border-right-color:#fff;
+    }
+    }
+    
+    canvas{
+    position: absolute;
+    width:100%;
+    height:100%;
+    }
+
+
+.landing__music_cart:hover,
+.landing__categories:hover,.cart:hover{
+    background-color: var(--color-light-green);
+    transition: 0.5s;
+}
+
+.landing__music_cart {
+    height: 3rem;
+    width: 7.5rem;
+}
+.cart {
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.cart__items {
+    display: flex;
+    background-color: var(--color-dark-red);
+    justify-content: center;
+}
+
+.landing__categories {
+    height: 3rem;
+    width: 10rem;
+}
+
+.landing__logo h5 {
+    padding-top: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.landing__data {
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.landing__data h5 {
+    color: #F2E9E9;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.landing__icons {
+    color: var(--color-white)
+}
+
+.landing__line {
+    font-size: 30px;
+    font-weight: 300;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/** LOADING BAR */
+
+
+
+.landing__button {
+    background: var(--color-light-green);
+    color: var(--color-white);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 50px;
+}
+
+.landing__button:hover {
+    background: var(--color-dark-green);
+}
+
+.bar {
+    background: #404040;
+    border: 2px solid #F2E9E9;
+    width: 360px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    width: 0%;
+    background: var(--color-white);
+    transition: 0.1s;
+    border-radius: 50px;
+}
+
+.fill-all {
+    height: 100%;
+    width: 100%;
+    background: var(--color-white);
+    transition: 0.1s;
+    border-radius: 50px;
+}
+
+.counter,.loading {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.output {
+    display: none;
+    justify-content: center;
+}
+
+.output__image {
+    width: 200px;
+}
+
+
+.home__content {
+    align-items: center;
+    color: #F2E9E9;
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 15px;
+}
+
+@media screen and (max-width: 540px) {
+    .home__content {
+        align-items: center;
+        color: #F2E9E9;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 15px;
+    }
+}
+    
